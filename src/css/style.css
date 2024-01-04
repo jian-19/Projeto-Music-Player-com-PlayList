@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    background-color: rgb(93, 93, 95);
+    height: 100vh;
+    width: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    max-height: 460px;
+    max-width: 960px;
+    box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
+    flex-wrap: wrap;
+}
+
+.cover {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.cover img {
+    border-radius: 10px;
+    filter: drop-shadow(12px 14px 17px #000000);
+}
+
+.buttons {
+    color: white;
+    padding: 2rem;
+    cursor: pointer;
+}
+
+.buttons span {
+    font-size: 5rem;
+    text-shadow: 1px 7px 5px rgba(0,0,0,0.6);
+}
+
+.playList {
+    height: 350px;
+    width: 300px;
+    margin: 2rem;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: -1px -1px 10px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px -1px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px -1px 10px 0px rgba(0,0,0,0.75);
+}
+
+.playList p {
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
