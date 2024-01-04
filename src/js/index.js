@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (playlistContainer && song && coverImage) {
         const playlist = [
             new Music("Ali Te Ama", "Rayane & Rafaela", "./src/Music/rayane-e-rafaela/Ali-Te-Ama.png", "./src/Music/rayane-e-rafaela/ali-te-ama.mp3"),
-            new Music("Caixa De Madeira", "Zé Neto e Cristiano", "./src/Music/yasmin-santos/Principalmente Pessoas.jpg", "./src/Music/yasmin-santos/Principalmente Pessoas.mp3"),
+            new Music("Caixa De Madeira", "Zé Neto e Cristiano", "./src/Music/ze-neto-e-cristiano/caixa-de-madeira.jpg", "./src/Music/ze-neto-e-cristiano/Caixa de Madeira.mp3"),
             new Music("Principalmente Pessoas", "Yasmin Santos, Diego & Victor Hugo", "./src/Music/yasmin-santos/Principalmente Pessoas.jpg", "./src/Music/yasmin-santos/Principalmente Pessoas.mp3"),
             // Adicione mais músicas conforme necessário
         ];
