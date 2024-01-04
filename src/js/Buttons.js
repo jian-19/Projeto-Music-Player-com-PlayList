@@ -14,7 +14,10 @@ export class Buttons {
         if (this.player.isPlaying()) {
             this.pause();
         } else {
-            this.play();
+            // Se não estiver reproduzindo, verifica se a fonte da música é válida antes de iniciar a reprodução
+            if (this.player.srcIsValid()) {
+                this.play();
+            }
         }
     }
 
@@ -31,6 +34,11 @@ export class Buttons {
     nextHandler() {
         // Lógica para avançar para a próxima música
         console.log("Botão de próximo clicado");
+    }
+
+    prevHandler() {
+        // Lógica para voltar para a música anterior
+        console.log("Botão de anterior clicado");
     }
 
     updatePlayPauseIcon(isPlaying) {
