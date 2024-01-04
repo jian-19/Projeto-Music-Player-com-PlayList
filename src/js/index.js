@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const playlistContainer = document.querySelector(".playList");
     const song = document.querySelector(".audio");
     const coverImage = document.querySelector(".coverAlbum");
+    const name = document.querySelector(".name")
 
     let currentMusicIndex = 0;
     let isPlaying = false;
@@ -14,8 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (playlistContainer && song && coverImage) {
         const playlist = [
             new Music("Ali Te Ama", "Rayane & Rafaela", "./src/Music/rayane-e-rafaela/Ali-Te-Ama.png", "./src/Music/rayane-e-rafaela/ali-te-ama.mp3"),
-            new Music("Caixa De Madeira", "Zé Neto e Cristiano", "./src/Music/ze-neto-e-cristiano/caixa-de-madeira.jpg", "./src/Music/ze-neto-e-cristiano/Caixa de Madeira.mp3"),
-            new Music("Principalmente Pessoas", "Yasmin Santos, Diego & Victor Hugo", "./src/Music/yasmin-santos/Principalmente Pessoas.jpg", "./src/Music/yasmin-santos/Principalmente Pessoas.mp3"),
+            new Music("Caixa De Madeira", "Zé Neto & Cristiano", "./src/Music/ze-neto-e-cristiano/caixa-de-madeira.jpg", "./src/Music/ze-neto-e-cristiano/Caixa de Madeira.mp3"),
+            new Music("Principalmente Pessoas", "Yasmin Santos", "./src/Music/yasmin-santos/Principalmente Pessoas.jpg", "./src/Music/yasmin-santos/Principalmente Pessoas.mp3"),
             // Adicione mais músicas conforme necessário
         ];
 
@@ -69,6 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const currentMusic = playlist[currentMusicIndex];
             musicPlayer.play(currentMusic.music);
             coverImage.src = currentMusic.cover.src;
+            name.innerHTML = `<p>${currentMusic.name} - ${currentMusic.artist}</p>`;
             isPlaying = true;
         }
     }

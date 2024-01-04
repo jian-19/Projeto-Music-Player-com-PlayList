@@ -45,6 +45,12 @@ body {
     filter: drop-shadow(12px 14px 17px #000000);
 }
 
+.name p {
+    padding: 20px;
+    color: white;
+    font-size: 18px;
+}
+
 .buttons {
     color: white;
     padding: 2rem;
